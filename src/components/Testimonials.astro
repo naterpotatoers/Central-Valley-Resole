@@ -1,0 +1,109 @@
+---
+import Container from "./Container.astro"
+import { softVariant as card } from "@tailus/themer-card";
+import { cn } from "@lib/utils";
+---
+
+<div class="text-gray-600 dark:text-gray-300" id="reviews">
+  <Container>
+    <div class="text-center">
+      <h2 class="text-3xl text-gray-950 dark:text-white font-semibold md:text-4xl">Loved by the Community</h2>
+      <p class="mt-4 text-gray-600 dark:text-gray-400">Harum quae dolore orrupti aut temporibus ariatur.</p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div class="space-y-3">
+            <div class={cn(card)}>
+                <div class="flex gap-3">
+                    <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
+                        <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" alt="John Doe" src="https://randomuser.me/api/portraits/men/1.jpg" loading="lazy" width="120" height="120">
+                    </span>
+                    <div class="w-[calc(100%-3.25rem)]">
+                        <h3 class="font-medium text-gray-950 dark:text-white">Jonathan Yombo</h3>
+                        <span class="block text-sm tracking-wide text-gray-600 dark:text-gray-400">Software Ingeneer</span>
+                        <blockquote class="mt-3">
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Tailus is really extraordinary and very practical, no need to break your head. A real gold mine.
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            <div class={cn(card)}>
+                <div class="flex gap-3">
+                    <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
+                        <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" alt="John Doe" src="https://randomuser.me/api/portraits/men/6.jpg" loading="lazy" width="120" height="120">
+                    </span>
+                    <div class="w-[calc(100%-3.25rem)]">
+                        <h3 class="font-medium text-gray-950 dark:text-white">Yves Kalume</h3>
+                        <span class="block text-sm tracking-wide text-gray-600 dark:text-gray-400">GDE - Android</span>
+                        <blockquote class="mt-3">
+                            <p class="text-gray-600 dark:text-gray-400">
+                                With no experience in webdesign I just redesigned my entire website in a few minutes with tailwindcss thanks to Tailus.
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="space-y-3">
+            <!-- Start of Testimonial 3 -->
+            <div class={cn(card)}>
+                <div class="flex gap-3">
+                    <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
+                        <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" alt="John Doe" src="https://randomuser.me/api/portraits/men/4.jpg" loading="lazy" width="120" height="120">
+                    </span>
+                    <div class="w-[calc(100%-3.25rem)]">
+                        <h3 class="font-medium text-gray-950 dark:text-white">Shekinah Tshiokufila</h3>
+                        <span class="block text-sm tracking-wide text-gray-600 dark:text-gray-400">Senior Software Ingeneer</span>
+                        <blockquote class="mt-3">
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Tailus is redefining the standard of web design, with these blocks it provides an easy and efficient way for those who love beauty but may lack the time to implement it. I can only recommend this incredible wonder.
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="space-y-3">
+            <div class={cn(card)}>
+                <div class="flex gap-3">
+                    <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
+                        <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" alt="John Doe" src="https://randomuser.me/api/portraits/men/10.jpg" loading="lazy" width="120" height="120">
+                    </span>
+                    <div class="w-[calc(100%-3.25rem)]">
+                        <h3 class="font-medium text-gray-950 dark:text-white">Khatab Wedaa</h3>
+                        <span class="block text-sm tracking-wide text-gray-600 dark:text-gray-400">MerakiUI Creator</span>
+                        <blockquote class="mt-3">
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Tailus is an elegant, clean, and responsive tailwind css components it's very helpfull to start fast with your project.
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            
+            <div class={cn(card)}>
+                <div class="flex gap-3">
+                    <span class="relative block rounded-[--avatar-border-radius] text-lg size-10">
+                        <img class="h-full w-full rounded-[--avatar-border-radius] object-cover" alt="John Doe" src="https://randomuser.me/api/portraits/men/13.jpg" loading="lazy" width="120" height="120">
+                    </span>
+                    <div class="w-[calc(100%-3.25rem)]">
+                        <h3 class="font-medium text-gray-950 dark:text-white">Roland Tubonge</h3>
+                        <span class="block text-sm tracking-wide text-gray-600 dark:text-gray-400">Software Engineer</span>
+                        <blockquote class="mt-3">
+                            <p class="text-gray-600 dark:text-gray-400">
+                                Tailus is so well designed that even with a very poor knowledge of web design you can do miracles. Let yourself be seduced!
+                            </p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </Container>
+</div>
