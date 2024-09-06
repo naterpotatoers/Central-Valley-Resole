@@ -1,14 +1,14 @@
 ---
 import { Image } from "astro:assets";
 import Container from "./Container.astro";
-
+import unparallel2Image from "../images/misc/climbing-3.png";
 ---
 
 <section>
     <Container>
         <div class="p-[--card-padding] overflow-hidden lg:aspect-video flex rounded-[--card-border-radius] bg-gray-100 dark:bg-[--card-dark-bg]">
             <div class="max-w-4xl w-full h-fit m-auto space-y-12">
-                <img src="src/images/shoes/parallel-2.png" alt="resole job" loading="lazy" width="2481" height="1626">
+                <Image src={unparallel2Image} alt="resole job" loading="lazy" width="2481" height="1626" />
             </div>
         </div>
         <div class="mt-12 grid sm:grid-cols-2 gap-4 sm:gap-12 max-w-3xl w-full mx-auto">
